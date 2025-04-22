@@ -23,7 +23,7 @@ const HomePage = () => {
                   <span className="text-primary">Your Goals</span>
                 </div>
                 <div className="pt-2">
-                  <span className="text-foreground">With a Personal</span>
+                  <span className="text-foreground">With Personal</span>
                 </div>
                 <div className="pt-2">
                   <span className="text-foreground">AI Trainer</span>

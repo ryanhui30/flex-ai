@@ -24,46 +24,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Links */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-2 text-sm">
-            <Link
-              href="/about"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="/terms"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Terms
-            </Link>
-            <Link
-              href="/privacy"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Privacy
-            </Link>
-            <Link
-              href="/contact"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/blog"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/help"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Help
-            </Link>
-          </div>
-
           {/* Status */}
           <div className="flex items-center gap-2 px-3 py-2 border border-border rounded-md bg-background/50">
             <div className="w-2 h-2 rounded-full bg-green-500"></div>
