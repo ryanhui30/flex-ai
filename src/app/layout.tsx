@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Flex AI - Flex Up",
+  title: "Flex AI",
   description: "Fitness AI Platform",
 };
 
