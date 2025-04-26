@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Flex AI 💪🤖  
+**AI-Powered Fitness Coach with Voice & Personalized Plans**  
 
-## Getting Started
+[Live Demo](https://flex-ai-six.vercel.app/) | [GitHub](https://github.com/ryanhui30/flex-ai)  
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features  
+- **🎙️ Voice-Activated Health Screening**  
+  Collects BMI, injury history, and fitness goals through natural Vapi voice conversations  
+- **📊 AI-Generated Fitness Plans**  
+  Gemini-powered workout routines and diet plans tailored to your body metrics  
+- **🔒 Secure Authentication**  
+  Clerk-managed signup with Google/GitHub + email/password  
+- **⚡ Real-Time Data Sync**  
+  Convex database stores user profiles and workout history  
+- **🎨 Beautiful UI**  
+  Shadcn components with dark/light mode toggle  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend  
+| Technology       | Use Case                     |
+|------------------|------------------------------|
+| Next.js 15       | App Router, RSC, SSR         |
+| React 19         | Interactive UI Components    |
+| TypeScript       | Type Safety                  |
+| Tailwind CSS     | Styling                      |
+| Shadcn/ui        | Accessible UI Components     |
 
-## Learn More
+### Backend  
+| Technology       | Use Case                     |
+|------------------|------------------------------|
+| Convex           | Real-time Database           |
+| Vapi             | Voice AI Agent               |
+| Gemini API       | Fitness/Diet Recommendations |
+| Clerk            | Auth & User Profiles         |
+| Webhooks         | Third-party Integrations     |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
+- Node.js v18+
+- Convex account
+- Vapi & Gemini API keys
+- Clerk application
 
-## Deploy on Vercel
+## **Development Setup**  
+1. **Clone the repo**:  
+  ```bash
+   git clone https://github.com/ryanhui30/flex-ai.git
+   cd flex-ai
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies**:
+  ```bash
+  npm install
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Configure environment variables**:
+- Duplicate .env.example as .env.local
+- Add your credentials:
+  ```bash
+  # Clerk Authentication
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
+  CLERK_SECRET_KEY=your_secret_key
+  
+  # Vapi Voice AI
+  NEXT_PUBLIC_VAPI_API_KEY=your_vapi_key
+  
+  # Convex Database
+  NEXT_PUBLIC_CONVEX_URL=your_convex_url
+  CONVEX_DEPLOYMENT_KEY=your_deployment_key
+  
+  # Gemini AI
+  NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_key
+  ```
+  
+4. **Database Setup**:
+  ```bash
+  npx convex dev
+  npx convex deploy
+  ```
+
+5. **Run locally**:
+  ```bash
+  npm run dev          # Start dev server
+  npx convex dev       # Launch Convex
+  ```
+
+## **Need Help**?
+📩 Contact: ryanhui30@gmail.com
